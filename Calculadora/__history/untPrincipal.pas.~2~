@@ -1,0 +1,41 @@
+unit untPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    edtResultado: TEdit;
+    bt7: TButton;
+    bt8: TButton;
+    bt9: TButton;
+    btDiv: TButton;
+    bt4: TButton;
+    bt5: TButton;
+    bt6: TButton;
+    btSub: TButton;
+    bt1: TButton;
+    bt2: TButton;
+    bt3: TButton;
+    btSoma: TButton;
+    btLimpar: TButton;
+    bt0: TButton;
+    btIgual: TButton;
+    btMult: TButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+end.
