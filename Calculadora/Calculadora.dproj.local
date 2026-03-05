@@ -2,9 +2,9 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2022/03/08 11:43:48.000.251,=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2026/02/25 21:26:54.398,=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2026/02/25 21:30:00.053,C:\Users\Aluno\Desktop\Calculadora\untPrincipal.dfm=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2026/02/25 21:30:00.053,C:\Users\Aluno\Desktop\Calculadora\untPrincipal.pas=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2026/02/25 21:31:05.265,C:\Users\Aluno\Desktop\Calculadora\Calculadora.dproj=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2026/02/25 21:26:54.000.398,=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/02/25 21:30:00.000.053,C:\Users\Aluno\Desktop\Calculadora\untPrincipal.pas=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/02/25 21:30:00.000.053,C:\Users\Aluno\Desktop\Calculadora\untPrincipal.dfm=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2026/02/25 21:31:05.000.265,C:\Users\Aluno\Desktop\Calculadora\Calculadora.dproj=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
   </Transactions>
 </BorlandProject>

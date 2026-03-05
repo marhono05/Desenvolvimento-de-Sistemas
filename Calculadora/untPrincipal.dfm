@@ -5,8 +5,8 @@ object frmPrincipal: TfrmPrincipal
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Calculadora'
-  ClientHeight = 370
-  ClientWidth = 300
+  ClientHeight = 420
+  ClientWidth = 304
   Color = clActiveCaption
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -95,6 +95,7 @@ object frmPrincipal: TfrmPrincipal
     Font.Style = []
     ParentFont = False
     TabOrder = 4
+    OnClick = btnDividirClick
   end
   object btnQuatro: TButton
     Left = 24
@@ -158,6 +159,7 @@ object frmPrincipal: TfrmPrincipal
     Font.Style = []
     ParentFont = False
     TabOrder = 8
+    OnClick = btnSubtrairClick
   end
   object btnUm: TButton
     Left = 24
@@ -222,6 +224,7 @@ object frmPrincipal: TfrmPrincipal
     Font.Style = []
     ParentFont = False
     TabOrder = 12
+    OnClick = btnSomarClick
   end
   object btnCancelar: TButton
     Left = 24
@@ -256,9 +259,9 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnZeroClick
   end
   object btIgual: TButton
-    Left = 152
-    Top = 280
-    Width = 58
+    Left = 175
+    Top = 343
+    Width = 98
     Height = 58
     Cursor = crHandPoint
     Caption = '='
@@ -269,6 +272,7 @@ object frmPrincipal: TfrmPrincipal
     Font.Style = []
     ParentFont = False
     TabOrder = 15
+    OnClick = btIgualClick
   end
   object btnMultiplicar: TButton
     Left = 216
@@ -284,5 +288,20 @@ object frmPrincipal: TfrmPrincipal
     Font.Style = []
     ParentFont = False
     TabOrder = 16
+    OnClick = btnMultiplicarClick
+  end
+  object btnVirgula: TButton
+    Left = 152
+    Top = 279
+    Width = 58
+    Height = 58
+    Caption = ','
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 17
   end
 end

@@ -25,6 +25,7 @@ type
     btnZero: TButton;
     btIgual: TButton;
     btnMultiplicar: TButton;
+    btnVirgula: TButton;
     procedure btnSeteClick(Sender: TObject);
     procedure btnOitoClick(Sender: TObject);
     procedure btnNoveClick(Sender: TObject);
@@ -36,6 +37,11 @@ type
     procedure btnTresClick(Sender: TObject);
     procedure btnZeroClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
+    procedure btnSomarClick(Sender: TObject);
+    procedure btIgualClick(Sender: TObject);
+    procedure btnSubtrairClick(Sender: TObject);
+    procedure btnMultiplicarClick(Sender: TObject);
+    procedure btnDividirClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -44,10 +50,40 @@ type
 
 var
   frmPrincipal: TfrmPrincipal;
+   valor1: Integer;
+   operacao: String;
+   SeparadorDecimal: String;
 
 implementation
 
 {$R *.dfm}
+
+procedure TfrmPrincipal.btIgualClick(Sender: TObject);
+var
+  valor2: Integer;
+  resultado : Double;
+begin
+  valor2 := StrToInt(edtResultado.Text);
+ begin
+
+  if operacao = 'soma' then
+    resultado := valor1 + valor2;
+
+  if operacao = 'subtracao' then
+    resultado := valor1 - valor2;
+
+  if operacao = 'multiplicacao' then
+    resultado := valor1 * valor2;
+
+  if operacao = 'divisao' then
+    resultado  := valor1 / valor2;
+
+  if operacao = 'virgula' then
+
+
+  edtResultado.Text := FloatToStr(resultado);
+ end;
+end;
 
 procedure TfrmPrincipal.btnCancelarClick(Sender: TObject);
 begin
@@ -59,9 +95,23 @@ begin
 edtResultado.Text := edtResultado.Text + '5';
 end;
 
+procedure TfrmPrincipal.btnDividirClick(Sender: TObject);
+begin
+  valor1 := StrToInt(edtResultado.Text);
+  operacao := 'divisao';
+  edtResultado.Text := '';
+end;
+
 procedure TfrmPrincipal.btnDoisClick(Sender: TObject);
 begin
 edtResultado.Text := edtResultado.Text + '2';
+end;
+
+procedure TfrmPrincipal.btnMultiplicarClick(Sender: TObject);
+begin
+  valor1 := StrToInt(edtResultado.Text);
+  operacao := 'multiplicacao';
+  edtResultado.Text := '';
 end;
 
 procedure TfrmPrincipal.btnNoveClick(Sender: TObject);
@@ -87,6 +137,22 @@ end;
 procedure TfrmPrincipal.btnSeteClick(Sender: TObject);
 begin
   edtResultado.Text := edtResultado.Text + '7';
+end;
+
+procedure TfrmPrincipal.btnSomarClick(Sender: TObject);
+
+begin
+  valor1    := StrToInt(edtResultado.Text);
+  operacao  := 'soma';
+  edtResultado.Text := '';
+
+end;
+
+procedure TfrmPrincipal.btnSubtrairClick(Sender: TObject);
+begin
+  valor1 := StrToInt(edtResultado.Text);
+  operacao := 'subtracao';
+  edtResultado.Text := '';
 end;
 
 procedure TfrmPrincipal.btnTresClick(Sender: TObject);

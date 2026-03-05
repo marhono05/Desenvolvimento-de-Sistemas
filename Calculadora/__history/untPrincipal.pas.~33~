@@ -1,0 +1,187 @@
+unit untPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmPrincipal = class(TForm)
+    edtResultado: TEdit;
+    btnSete: TButton;
+    btnOito: TButton;
+    btnNove: TButton;
+    btnDividir: TButton;
+    btnQuatro: TButton;
+    btnCinco: TButton;
+    btnSeis: TButton;
+    btnSubtrair: TButton;
+    btnUm: TButton;
+    btnDois: TButton;
+    btnTres: TButton;
+    btnSomar: TButton;
+    btnCancelar: TButton;
+    btnZero: TButton;
+    btIgual: TButton;
+    btnMultiplicar: TButton;
+    btnVirgula: TButton;
+    procedure btnSeteClick(Sender: TObject);
+    procedure btnOitoClick(Sender: TObject);
+    procedure btnNoveClick(Sender: TObject);
+    procedure btnQuatroClick(Sender: TObject);
+    procedure btnCincoClick(Sender: TObject);
+    procedure btnSeisClick(Sender: TObject);
+    procedure btnUmClick(Sender: TObject);
+    procedure btnDoisClick(Sender: TObject);
+    procedure btnTresClick(Sender: TObject);
+    procedure btnZeroClick(Sender: TObject);
+    procedure btnCancelarClick(Sender: TObject);
+    procedure btnSomarClick(Sender: TObject);
+    procedure btIgualClick(Sender: TObject);
+    procedure btnSubtrairClick(Sender: TObject);
+    procedure btnMultiplicarClick(Sender: TObject);
+    procedure btnDividirClick(Sender: TObject);
+    procedure btnVirgulaClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+   valor1: Integer;
+   operacao: String;
+   SeparadorDecimal: String;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmPrincipal.btIgualClick(Sender: TObject);
+var
+  valor2: Integer;
+  resultado : Double;
+begin
+  valor2 := StrToInt(edtResultado.Text);
+ begin
+
+  if operacao = 'soma' then
+    resultado := valor1 + valor2;
+
+  if operacao = 'subtracao' then
+    resultado := valor1 - valor2;
+
+  if operacao = 'multiplicacao' then
+    resultado := valor1 * valor2;
+
+  if operacao = 'divisao' then
+    resultado  := valor1 / valor2;
+
+  if operacao = 'virgula' then
+
+
+  edtResultado.Text := FloatToStr(resultado);
+ end;
+end;
+
+procedure TfrmPrincipal.btnCancelarClick(Sender: TObject);
+begin
+edtResultado.Text := '';
+end;
+
+procedure TfrmPrincipal.btnCincoClick(Sender: TObject);
+begin
+edtResultado.Text := edtResultado.Text + '5';
+end;
+
+procedure TfrmPrincipal.btnDividirClick(Sender: TObject);
+begin
+  valor1 := StrToInt(edtResultado.Text);
+  operacao := 'divisao';
+  edtResultado.Text := '';
+end;
+
+procedure TfrmPrincipal.btnDoisClick(Sender: TObject);
+begin
+edtResultado.Text := edtResultado.Text + '2';
+end;
+
+procedure TfrmPrincipal.btnMultiplicarClick(Sender: TObject);
+begin
+  valor1 := StrToInt(edtResultado.Text);
+  operacao := 'multiplicacao';
+  edtResultado.Text := '';
+end;
+
+procedure TfrmPrincipal.btnNoveClick(Sender: TObject);
+begin
+edtResultado.Text := edtResultado.Text + '9';
+end;
+
+procedure TfrmPrincipal.btnOitoClick(Sender: TObject);
+begin
+  edtResultado.Text := edtResultado.Text + '8';
+end;
+
+procedure TfrmPrincipal.btnQuatroClick(Sender: TObject);
+begin
+edtResultado.Text := edtResultado.Text + '4';
+end;
+
+procedure TfrmPrincipal.btnSeisClick(Sender: TObject);
+begin
+edtResultado.Text := edtResultado.Text + '6';
+end;
+
+procedure TfrmPrincipal.btnSeteClick(Sender: TObject);
+begin
+  edtResultado.Text := edtResultado.Text + '7';
+end;
+
+procedure TfrmPrincipal.btnSomarClick(Sender: TObject);
+
+begin
+  valor1    := StrToInt(edtResultado.Text);
+  operacao  := 'soma';
+  edtResultado.Text := '';
+
+end;
+
+procedure TfrmPrincipal.btnSubtrairClick(Sender: TObject);
+begin
+  valor1 := StrToInt(edtResultado.Text);
+  operacao := 'subtracao';
+  edtResultado.Text := '';
+end;
+
+procedure TfrmPrincipal.btnTresClick(Sender: TObject);
+begin
+edtResultado.Text := edtResultado.Text + '3';
+end;
+
+procedure TfrmPrincipal.btnUmClick(Sender: TObject);
+begin
+edtResultado.Text := edtResultado.Text + '1';
+end;
+
+procedure TfrmPrincipal.btnVirgulaClick(Sender: TObject);
+begin
+// Verificar se já contém o separador decimal
+if Pos(SeparadorDecimal, edtResultado) = 0 then
+begin
+  // Se estiver vazio ou com o 0, inicia com 0
+  if (edtResultado = '') or (edtResultado = 0) then
+  edtResultado := '0' + SeparadorDecimal
+
+end;
+
+end;
+
+procedure TfrmPrincipal.btnZeroClick(Sender: TObject);
+begin
+edtResultado.Text := edtResultado.Text + '0';
+end;
+
+end.
