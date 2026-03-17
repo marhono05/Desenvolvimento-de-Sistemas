@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Math;
 
 type
   TForm1 = class(TForm)
@@ -32,16 +32,34 @@ implementation
 {$R *.dfm}
 
 procedure TForm1.btnCalcularClick(Sender: TObject);
-var
-  valorNome : String;
-  valorPeso : Double;
-  valorAltura : Double;
+  var
+  nome: String;
+  peso: Double;
+  altura: Double;
+  resultadoIMC: Double;
 
 begin
-  lblResultado := StrToFloat(lblResultado.Text);
-  lblResultado := valorPeso / (valorAltura * valorAltura);
+  peso := StrToFloat(edtPeso.Text);
+  altura := StrToFloat(edtAltura.Text);
+  resultadoIMC := peso / (altura * altura);
+  resultadoIMC := RoundTo (resultadoIMC, -2);
+  lblResultado.Caption := FloatToStr(resultadoIMC);
 
+  if resultadoIMC <= 18 then
+    ShowMessage('Seu IMC é ' +  FloatToStr(resultadoIMC) + sLineBreak + 'Você é magrelo!')
 
+  else if resultadoIMC <= 24.9 then 
+    ShowMessage('Seu IMC é ' + FloatToStr(resultadoIMC) + sLineBreak + 'Você está saudável!')
+
+  else if resultadoIMC <= 29.9 then
+     ShowMessage('Seu IMC é ' + FloatToStr(resultadoIMC) + sLineBreak + 'Você é gordinho!')
+
+  else if resultadoIMC <= 39.9 then
+       ShowMessage('Seu IMC é ' + FloatToStr(resultadoIMC) + sLineBreak + 'Você é obeso!')
+  else
+    ShowMessage('Seu IMC é ' + FloatToStr(resultadoIMC) + sLineBreak + 'Você é IMENSO!')
+
+       
 end;
 
 end.

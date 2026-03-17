@@ -4,11 +4,11 @@ object Form1: TForm1
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'CalculoIMC'
-  ClientHeight = 252
-  ClientWidth = 453
+  ClientHeight = 322
+  ClientWidth = 354
   Color = clSkyBlue
   Font.Charset = DEFAULT_CHARSET
-  Font.Color = clFuchsia
+  Font.Color = clWhite
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
@@ -57,11 +57,17 @@ object Form1: TForm1
   object lblResultado: TLabel
     Left = 152
     Top = 205
-    Width = 29
-    Height = 39
+    Width = 32
+    Height = 49
     Color = clWhite
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
     GlowSize = 13
     ParentColor = False
+    ParentFont = False
   end
   object Label4: TLabel
     Left = 46
@@ -113,7 +119,6 @@ object Form1: TForm1
     Font.Height = -17
     Font.Name = 'Tahoma'
     Font.Style = []
-    NumbersOnly = True
     ParentFont = False
     TabOrder = 2
   end
