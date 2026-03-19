@@ -1,0 +1,48 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'frmPrincipal'
+  ClientHeight = 512
+  ClientWidth = 527
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  WindowState = wsMaximized
+  PixelsPerInch = 96
+  TextHeight = 13
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 493
+    Width = 527
+    Height = 19
+    Panels = <
+      item
+        Alignment = taCenter
+        Text = 'Usu'#225'rio Logado'
+        Width = 200
+      end
+      item
+        Width = 200
+      end
+      item
+        Width = 200
+      end>
+    ExplicitLeft = 64
+    ExplicitTop = 221
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 527
+    Height = 41
+    Align = alTop
+    TabOrder = 1
+    ExplicitLeft = 80
+    ExplicitTop = 48
+    ExplicitWidth = 185
+  end
+end

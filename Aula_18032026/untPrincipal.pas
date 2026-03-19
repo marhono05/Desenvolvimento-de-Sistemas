@@ -1,0 +1,56 @@
+unit untPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ComCtrls, Vcl.ExtCtrls, Vcl.Menus;
+
+type
+  TfrmPrincipal = class(TForm)
+    StatusBar1: TStatusBar;
+    Panel1: TPanel;
+    MainMenu1: TMainMenu;
+    Cadastros1: TMenuItem;
+    Sair1: TMenuItem;
+    Alunos1: TMenuItem;
+    PopupMenu1: TPopupMenu;
+    Cadastros2: TMenuItem;
+    Sair2: TMenuItem;
+    Alunos2: TMenuItem;
+    Timer1: TTimer;
+    procedure Sair1Click(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
+    procedure Alunos1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+uses untCadAluno;
+
+procedure TfrmPrincipal.Alunos1Click(Sender: TObject);
+begin
+  frmCadAluno := tfrmCadAluno.Create(Self);
+  frmCadAluno.ShowModal;
+end;
+
+procedure TfrmPrincipal.Sair1Click(Sender: TObject);
+begin
+  Application.Terminate;
+end;
+
+procedure TfrmPrincipal.Timer1Timer(Sender: TObject);
+begin
+  StatusBar1.Panels[2].Text := FormatDateTime('dd/MM/yyyy - hh:nn:ss', Now);
+end;
+
+end.

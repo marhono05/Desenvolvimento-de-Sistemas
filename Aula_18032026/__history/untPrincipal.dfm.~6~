@@ -1,0 +1,76 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'frmPrincipal'
+  ClientHeight = 512
+  ClientWidth = 527
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  PopupMenu = PopupMenu1
+  WindowState = wsMaximized
+  PixelsPerInch = 96
+  TextHeight = 13
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 493
+    Width = 527
+    Height = 19
+    Panels = <
+      item
+        Alignment = taCenter
+        Text = 'Usu'#225'rio Logado'
+        Width = 200
+      end
+      item
+        Width = 200
+      end
+      item
+        Width = 200
+      end>
+    ExplicitLeft = 64
+    ExplicitTop = 221
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 527
+    Height = 41
+    Align = alTop
+    TabOrder = 1
+    ExplicitLeft = 80
+    ExplicitTop = 48
+    ExplicitWidth = 185
+  end
+  object MainMenu1: TMainMenu
+    Left = 40
+    Top = 112
+    object Cadastros1: TMenuItem
+      Caption = 'Cadastros'
+      object Alunos1: TMenuItem
+        Caption = 'Alunos'
+      end
+    end
+    object Sair1: TMenuItem
+      Caption = 'Sair'
+    end
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 200
+    Top = 112
+    object Cadastros2: TMenuItem
+      Caption = 'Cadastros'
+      object Alunos2: TMenuItem
+        Caption = 'Alunos'
+      end
+    end
+    object Sair2: TMenuItem
+      Caption = 'Sair'
+    end
+  end
+end
