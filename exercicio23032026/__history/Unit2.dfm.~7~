@@ -1,0 +1,97 @@
+object frmCalcularSal: TfrmCalcularSal
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'frmCalcularSal'
+  ClientHeight = 252
+  ClientWidth = 537
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblNome: TLabel
+    Left = 27
+    Top = 40
+    Width = 41
+    Height = 18
+    Caption = 'NOME'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lblSalAtual: TLabel
+    Left = 27
+    Top = 80
+    Width = 78
+    Height = 18
+    Caption = 'Sal'#225'rio Atual'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lblAumento: TLabel
+    Left = 27
+    Top = 128
+    Width = 79
+    Height = 18
+    Caption = 'Aumento %'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object btnCalcular: TButton
+    Left = 144
+    Top = 200
+    Width = 75
+    Height = 25
+    Caption = 'Calcular'
+    TabOrder = 0
+    OnClick = btnCalcularClick
+  end
+  object btnFechar: TButton
+    Left = 280
+    Top = 200
+    Width = 75
+    Height = 25
+    Caption = 'Fechar'
+    TabOrder = 1
+    OnClick = btnFecharClick
+  end
+  object edtNome: TEdit
+    Left = 144
+    Top = 41
+    Width = 121
+    Height = 21
+    TabOrder = 2
+  end
+  object edtSalAtual: TEdit
+    Left = 144
+    Top = 81
+    Width = 121
+    Height = 21
+    TabOrder = 3
+  end
+  object edtAumento: TEdit
+    Left = 144
+    Top = 129
+    Width = 121
+    Height = 21
+    TabOrder = 4
+    OnChange = edtAumentoChange
+  end
+end

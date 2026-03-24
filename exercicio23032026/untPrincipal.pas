@@ -1,0 +1,54 @@
+unit untPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.ComCtrls, Vcl.Menus;
+
+type
+  TfrmPrincipal = class(TForm)
+    StatusBar1: TStatusBar;
+    Timer1: TTimer;
+    MainMenu1: TMainMenu;
+    CalcularSalario1: TMenuItem;
+    Sair1: TMenuItem;
+    PopupMenu1: TPopupMenu;
+    CalcularSalrio2: TMenuItem;
+    Sair2: TMenuItem;
+    procedure Timer1Timer(Sender: TObject);
+    procedure Sair1Click(Sender: TObject);
+    procedure CalcularSalario1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit2;
+
+procedure TfrmPrincipal.CalcularSalario1Click(Sender: TObject);
+begin
+frmCalcularSal := tfrmCalcularSal.Create(Self);
+frmCalcularSal.ShowModal;
+end;
+
+procedure TfrmPrincipal.Sair1Click(Sender: TObject);
+begin
+Application.Terminate;
+end;
+
+procedure TfrmPrincipal.Timer1Timer(Sender: TObject);
+begin
+StatusBar1.Panels[1].Text := FormatDateTime('hh:nn:ss',Now);
+StatusBar1.Panels[2].Text := FormatDateTime('dd/mm/yyyy',Now);
+end;
+
+end.

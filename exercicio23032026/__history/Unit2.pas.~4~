@@ -1,0 +1,44 @@
+unit Unit2;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmCalcularSal = class(TForm)
+    lblNome: TLabel;
+    lblSalAtual: TLabel;
+    lblAumento: TLabel;
+    btnCalcular: TButton;
+    btnFechar: TButton;
+    edtNome: TEdit;
+    edtSalAtual: TEdit;
+    edtAumento: TEdit;
+    procedure btnFecharClick(Sender: TObject);
+    procedure edtAumentoChange(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCalcularSal: TfrmCalcularSal;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmCalcularSal.btnFecharClick(Sender: TObject);
+begin
+close;
+end;
+
+procedure TfrmCalcularSal.edtAumentoChange(Sender: TObject);
+begin
+edtSalAtual * (edtAumento / 100);
+end;
+
+end.

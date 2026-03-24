@@ -1,0 +1,42 @@
+unit untPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.ComCtrls, Vcl.Menus;
+
+type
+  TForm1 = class(TForm)
+    StatusBar1: TStatusBar;
+    Timer1: TTimer;
+    MainMenu1: TMainMenu;
+    CalcularSalrio1: TMenuItem;
+    Sair1: TMenuItem;
+    procedure Timer1Timer(Sender: TObject);
+    procedure Sair1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.Sair1Click(Sender: TObject);
+begin
+Application.Terminate;
+end;
+
+procedure TForm1.Timer1Timer(Sender: TObject);
+begin
+StatusBar1.Panels[1].Text := FormatDateTime('hh:nn:ss',Now);
+StatusBar1.Panels[2].Text := FormatDateTime('dd/mm/yyyy',Now);
+end;
+
+end.
