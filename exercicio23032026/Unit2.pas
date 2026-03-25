@@ -39,8 +39,8 @@ aumentoSal : Double;
 begin
 salAtual := StrToFloat(edtSalAtual.Text);
 aumentoSal := StrToFloat(edtAumento.Text);
-resultadoAumento := StrToFloat(edtSalAtual) * StrToFloat((edtAumento) / 100);
-showMessage(edtNome + 'seu novo salário é de: ' + resultadoAumento)
+resultadoAumento := (SalAtual) + (SalAtual) * ((aumentoSal) / 100);
+showMessage(edtNome.Text + ' seu novo salário é de: ' + FloatToStr(resultadoAumento));
 end;
 
 procedure TfrmCalcularSal.btnFecharClick(Sender: TObject);
