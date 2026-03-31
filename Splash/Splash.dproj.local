@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/03/08 11:43:48.000.251,=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/03/25 21:59:18.000.856,=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/03/25 22:09:48.000.042,C:\Users\Aluno\Desktop\Splash\untPrincipal.pas=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/03/25 22:09:48.000.042,C:\Users\Aluno\Desktop\Splash\untPrincipal.dfm=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2026/03/25 22:10:03.000.813,C:\Users\Aluno\Desktop\Splash\Splash.dproj=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2026/03/25 22:11:09.000.775,=C:\Users\Aluno\Desktop\Splash\Unit1.pas</Transaction>
+    <Transaction>2026/03/25 22:21:58.000.187,C:\Users\Aluno\Desktop\Splash\untSplash.pas=C:\Users\Aluno\Desktop\Splash\Unit1.pas</Transaction>
+    <Transaction>2026/03/25 22:21:58.000.187,C:\Users\Aluno\Desktop\Splash\untSplash.dfm=C:\Users\Aluno\Desktop\Splash\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

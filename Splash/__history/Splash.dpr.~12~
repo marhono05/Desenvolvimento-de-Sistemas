@@ -1,0 +1,27 @@
+program Splash;
+
+uses
+  Vcl.Forms, Winapi.Windows,
+  untPrincipal in 'untPrincipal.pas' {frmPrincipal},
+  untSplash in 'untSplash.pas' {frmSplash};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+
+  frmSplash := TFrmSplash.Create(nil);//Criando o formulário splash
+  try
+    frmSplash.Show;//Mostra o splash
+    frmSplash.Update;//Pra não ficar uma tela branca feia
+
+    Sleep(5000);//Tempo que o splash vai ficar parado aqui na tela
+
+    Application.CreateForm(TfrmPrincipal, frmPrincipal);//Cria o formulário principal
+    frmSplash.Hide;//Esconde o splash pro principal aparecer na tela
+  finally
+    frmSplash.Free;
+  end;
+  Application.Run;
+end.

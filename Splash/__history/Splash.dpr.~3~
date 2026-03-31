@@ -1,0 +1,16 @@
+program Splash;
+
+uses
+  Vcl.Forms,
+  untPrincipal in 'untPrincipal.pas' {frmPrincipal},
+  untSplash in 'untSplash.pas' {frmSplash};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TfrmSplash, frmSplash);
+  Application.Run;
+end.

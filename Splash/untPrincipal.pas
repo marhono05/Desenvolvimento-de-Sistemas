@@ -1,0 +1,58 @@
+unit untPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.StdCtrls, Vcl.ComCtrls;
+
+type
+  TfrmPrincipal = class(TForm)
+    MainMenu1: TMainMenu;
+    EncerrarAplicacao1: TMenuItem;
+    ProgressBar1: TProgressBar;
+    btnCalcular: TButton;
+    procedure EncerrarAplicacao1Click(Sender: TObject);
+    procedure btnCalcularClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmPrincipal.btnCalcularClick(Sender: TObject);
+var
+  i: Integer;
+begin
+  ProgressBar1.Min := 0;
+  ProgressBar1.Max := 100;
+  ProgressBar1.Position := 0;
+
+  for i := 1 to 100 do   // Criar laço de repetição
+    begin
+      ProgressBar1.Position := i;
+      Sleep(50);       // Vai carregar com um intervalo de 50
+      Application.ProcessMessages; //Carrega visualmente a tela
+    end;
+end;
+
+procedure TfrmPrincipal.EncerrarAplicacao1Click(Sender: TObject);
+
+begin
+
+  if MessageDlg('Deseja realmente fechar o sistema?',
+     mtConfirmation, [mbYes, mbNo], 0) = mrYes then
+  begin
+     Application.Terminate;
+  end;
+
+end;
+
+end.
