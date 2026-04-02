@@ -1,0 +1,67 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Tela Inicial'
+  ClientHeight = 252
+  ClientWidth = 537
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  PopupMenu = PopupMenu1
+  PixelsPerInch = 96
+  TextHeight = 13
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 233
+    Width = 537
+    Height = 19
+    Panels = <
+      item
+        Text = 'Usu'#225'rio Logado!'
+        Width = 130
+      end
+      item
+        Width = 130
+      end
+      item
+        Width = 130
+      end>
+    ExplicitLeft = 224
+    ExplicitTop = 176
+    ExplicitWidth = 0
+  end
+  object MainMenu1: TMainMenu
+    Left = 24
+    Top = 24
+    object Cadastrar1: TMenuItem
+      Caption = 'Cadastrar'
+      OnClick = Cadastrar1Click
+    end
+    object Sair1: TMenuItem
+      Caption = 'Sair'
+      OnClick = Sair1Click
+    end
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 96
+    Top = 24
+    object Cadastrar2: TMenuItem
+      Caption = 'Cadastrar'
+    end
+    object Sair2: TMenuItem
+      Caption = 'Sair'
+      OnClick = Sair1Click
+    end
+  end
+  object Timer1: TTimer
+    Left = 160
+    Top = 24
+  end
+end

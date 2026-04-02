@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/03/08 11:43:48.000.251,=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/04/01 21:32:24.000.829,=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/04/01 21:39:27.000.028,C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Aluno\Desktop\atividade\untPrincipal.dfm</Transaction>
+    <Transaction>2026/04/01 21:39:27.000.028,C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Aluno\Desktop\atividade\untPrincipal.pas</Transaction>
+    <Transaction>2026/04/01 21:39:30.000.278,C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Aluno\Desktop\atividade\Project1.dproj</Transaction>
+    <Transaction>2026/04/01 21:40:17.000.728,=C:\Users\Aluno\Desktop\atividade\Unit1.pas</Transaction>
+    <Transaction>2026/04/01 21:40:54.000.443,C:\Users\Aluno\Desktop\atividade\Unit1.dfm=C:\Users\Aluno\Desktop\atividade\untCadastro.dfm</Transaction>
+    <Transaction>2026/04/01 21:40:54.000.443,C:\Users\Aluno\Desktop\atividade\Unit1.pas=C:\Users\Aluno\Desktop\atividade\untCadastro.pas</Transaction>
+    <Transaction>2026/04/01 22:21:17.000.166,=C:\Users\Aluno\Desktop\atividade\Unit1.pas</Transaction>
+    <Transaction>2026/04/01 22:21:41.000.755,C:\Users\Aluno\Desktop\atividade\Unit1.dfm=C:\Users\Aluno\Desktop\atividade\untSplash.dfm</Transaction>
+    <Transaction>2026/04/01 22:21:41.000.755,C:\Users\Aluno\Desktop\atividade\Unit1.pas=C:\Users\Aluno\Desktop\atividade\untSplash.pas</Transaction>
+  </Transactions>
+</BorlandProject>

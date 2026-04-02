@@ -1,0 +1,32 @@
+program Project1;
+
+uses
+  Vcl.Forms,
+  untPrincipal in 'untPrincipal.pas' {frmPrincipal},
+  untCadastro in 'untCadastro.pas' {frmCadastro},
+  untSplash in 'untSplash.pas' {frmSplash};
+
+{$R *.res}
+
+begin
+
+  frmSplash := TfrmSplash.Create(nill);
+  try
+    frmSplash.Show;
+    frmSplash.Update;
+
+    Sleep (5000);
+
+    Application.CreateForm((TfrmPrincipal, frmPrincipal);
+    frmSplash.Hide;
+
+  finally
+  frmSplash.Free;
+
+  end;
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TfrmCadastro, frmCadastro);
+  Application.Run;
+end.

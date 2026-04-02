@@ -1,0 +1,99 @@
+object frmCadastro: TfrmCadastro
+  Left = 0
+  Top = 0
+  BorderIcons = []
+  BorderStyle = bsSingle
+  Caption = 'Cadastro'
+  ClientHeight = 252
+  ClientWidth = 537
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblCPF: TLabel
+    Left = 48
+    Top = 80
+    Width = 58
+    Height = 13
+    Caption = 'Insira o CPF'
+  end
+  object lblNome: TLabel
+    Left = 48
+    Top = 40
+    Width = 65
+    Height = 13
+    Caption = 'Insira o nome'
+  end
+  object lblData: TLabel
+    Left = 48
+    Top = 120
+    Width = 135
+    Height = 13
+    Caption = 'Insira a Data de Nascimento'
+  end
+  object edtCPF: TEdit
+    Left = 288
+    Top = 77
+    Width = 121
+    Height = 21
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object edtNome: TEdit
+    Left = 288
+    Top = 37
+    Width = 121
+    Height = 21
+    ReadOnly = True
+    TabOrder = 1
+  end
+  object edtData: TEdit
+    Left = 288
+    Top = 117
+    Width = 121
+    Height = 21
+    ReadOnly = True
+    TabOrder = 2
+  end
+  object btnNovo: TButton
+    Left = 64
+    Top = 208
+    Width = 75
+    Height = 25
+    Caption = 'Novo'
+    TabOrder = 3
+    OnClick = btnNovoClick
+  end
+  object btnLimpar: TButton
+    Left = 272
+    Top = 208
+    Width = 75
+    Height = 25
+    Caption = 'Limpar'
+    TabOrder = 4
+    OnClick = btnLimparClick
+  end
+  object btnSalvar: TButton
+    Left = 168
+    Top = 208
+    Width = 75
+    Height = 25
+    Caption = 'Salvar'
+    TabOrder = 5
+    OnClick = btnSalvarClick
+  end
+  object btnSair: TButton
+    Left = 376
+    Top = 208
+    Width = 75
+    Height = 25
+    Caption = 'Sair'
+    TabOrder = 6
+    OnClick = btnSairClick
+  end
+end

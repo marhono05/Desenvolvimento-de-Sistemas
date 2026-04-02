@@ -1,0 +1,54 @@
+unit untCadastro;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmCadastro = class(TForm)
+    lblCPF: TLabel;
+    lblNome: TLabel;
+    lblData: TLabel;
+    edtCPF: TEdit;
+    edtNome: TEdit;
+    edtData: TEdit;
+    btnNovo: TButton;
+    btnLimpar: TButton;
+    btnSalvar: TButton;
+    btnSair: TButton;
+    procedure btnSairClick(Sender: TObject);
+    procedure btnNovoClick(Sender: TObject);
+    procedure btnSalvarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadastro: TfrmCadastro;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmCadastro.btnNovoClick(Sender: TObject);
+begin
+edtNome.ReadOnly := False;
+edtCPF.ReadOnly := False;
+edtData.ReadOnly := False;
+end;
+
+procedure TfrmCadastro.btnSairClick(Sender: TObject);
+begin
+Close;
+end;
+
+procedure TfrmCadastro.btnSalvarClick(Sender: TObject);
+begin
+showMessage('Usuário ' + edtNome.Text  + ' cadastrado!');
+end;
+
+end.
